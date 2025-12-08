@@ -1,3 +1,4 @@
+// $$typeof: Symbol(react.element) =>This is a security feature ($$typeof) i.e cannot come from an API call. React  will not see this typeof as Sybmol bcoz Symbols cannot be transferred over JSON or transmitted as JSON
 import { useState } from "react";
 
 const content = [
