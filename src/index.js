@@ -14,10 +14,3 @@ root.render(
   </React.StrictMode>
 );
 
-// REACT 17
-// ReactDOM.render(
-//   <React.StrictMode>
-//     <App />
-//   </React.StrictMode>,
-//   document.getElementById('root')
-// );
