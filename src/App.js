@@ -44,6 +44,7 @@ function Tabbed({ content }) {
          onClick={setActiveTab} />
       </div>
 
+{/* .at(activeTab) gets the element at index activeTab */}
       {activeTab <= 2 ? (
         <TabContent item={content.at(activeTab)} />
       ) : (
