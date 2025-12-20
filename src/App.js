@@ -35,21 +35,19 @@ function Tabbed({ content }) {
   return (
     <div>
       <div className="tabs">
-        <Tab num={0} activeTab={activeTab} 
-        onClick={setActiveTab} />
-        <Tab num={1} activeTab={activeTab} 
-        onClick={setActiveTab} />
-        
-        <Tab num={2} activeTab={activeTab}
-         onClick={setActiveTab} />
-        <Tab num={3} activeTab={activeTab}
-         onClick={setActiveTab} />
+        <Tab num={0} activeTab={activeTab} onClick={setActiveTab} />
+        <Tab num={1} activeTab={activeTab} onClick={setActiveTab} />
+
+        <Tab num={2} activeTab={activeTab} onClick={setActiveTab} />
+        <Tab num={3} activeTab={activeTab} onClick={setActiveTab} />
       </div>
 
-{/* .at(activeTab) gets the element at index activeTab and also the summary of the at the index activeTab as key prop*/}
+      {/* .at(activeTab) gets the element at index activeTab and also the summary of the index activeTab as key prop*/}
       {activeTab <= 2 ? (
-        <TabContent item={content.at(activeTab)} 
-        key={content.at(activeTab.summary)}/>
+        <TabContent
+          item={content.at(activeTab)}
+          key={content.at(activeTab).summary}
+        />
       ) : (
         <DifferentContent />
       )}
@@ -74,7 +72,7 @@ function TabContent({ item }) {
 
   function handleInc() {
     setLikes(likes + 1);
-  }
+  } 
 
   return (
     <div className="tab-content">
