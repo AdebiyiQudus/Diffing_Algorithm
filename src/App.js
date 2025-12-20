@@ -46,7 +46,7 @@ function Tabbed({ content }) {
          onClick={setActiveTab} />
       </div>
 
-{/* .at(activeTab) gets the element at index activeTab */}
+{/* .at(activeTab) gets the element at index activeTab and also the summary of the at the index activeTab as key prop*/}
       {activeTab <= 2 ? (
         <TabContent item={content.at(activeTab)} />
       ) : (
