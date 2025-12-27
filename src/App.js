@@ -106,3 +106,15 @@ function DifferentContent() {
     </div>
   );
 }
+
+
+function circleArea(radius) {
+  return 3.14 * radius * radius;
+}
+console.log(circleArea(5));
+
+
+const area ={}
+function areaOfCircle(radius) {
+  return area.circle = Math.PI * radius * radius;
+}
