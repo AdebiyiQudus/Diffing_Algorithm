@@ -113,7 +113,7 @@ function circleArea(radius) {
 }
 console.log(circleArea(5));
 
-
+// Side effect example
 const area ={}
 function areaOfCircle(radius) {
   return area.circle = Math.PI * radius * radius;
