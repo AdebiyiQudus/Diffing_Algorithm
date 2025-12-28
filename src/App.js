@@ -72,12 +72,22 @@ function TabContent({ item }) {
   const [likes, setLikes] = useState(0);
 
   function handleInc() {
-    setLikes(likes + 1);
+    setLikes((likes) => likes + 1);
   } 
 
   function handleUndo() {
-    setShowDetails(false);
+    setShowDetails(true);
     setLikes(0);
+  }
+
+  function handleTripleInc() {
+    setLikes((likes) => likes + 1);
+    setLikes((likes) => likes + 1);
+    setLikes((likes) => likes + 1);
+  }
+
+  function handleUndoIn2s() {
+    setTimeout(handleUndo, 2000);
   }
   return (
     <div className="tab-content">
@@ -92,13 +102,13 @@ function TabContent({ item }) {
         <div className="hearts-counter">
           <span>{likes} ❤️</span>
           <button onClick={handleInc}>+</button>
-          <button>+++</button>
+          <button onClick={handleTripleInc}>+++</button>
         </div>
       </div>
 
       <div className="tab-undo">
         <button onClick={handleUndo}>Undo</button>
-        <button>Undo in 2s</button>
+        <button onClick={handleUndoIn2s}>Undo in 2s</button>
       </div>
     </div>
   );
@@ -116,7 +126,7 @@ function DifferentContent() {
 function circleArea(radius) {
   return 3.14 * radius * radius;
 }
-console.log(circleArea(5));
+// console.log(circleArea(5));
 
 // Side effect example
 const area ={}
