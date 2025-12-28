@@ -1,3 +1,4 @@
+// React Fiber is a new way React handles rendering. Introduced in React 16, it helps React update the UI faster and more smoothly by breaking work into small pieces.
 // $$typeof: Symbol(react.element) =>This is a security feature ($$typeof) i.e cannot come from an API call. React  will not see this typeof as Sybmol bcoz Symbols cannot be transferred over JSON or transmitted as JSON
 // Key Prop to reset state => if we have the same element at the same postion in the tree, React (DOM element and state will be kept) will preserve its state. If we want to reset the state of a component when it is re-rendered, we can give it a different key prop.
 
