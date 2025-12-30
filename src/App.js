@@ -122,7 +122,7 @@ function DifferentContent() {
   );
 }
 
-
+// Pure function example
 function circleArea(radius) {
   return 3.14 * radius * radius;
 }
