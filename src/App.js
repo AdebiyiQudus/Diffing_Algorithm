@@ -75,6 +75,7 @@ function TabContent({ item }) {
     setLikes((likes) => likes + 1);
   } 
 
+  // Event Handler to reset state
   function handleUndo() {
     setShowDetails(true);
     setLikes(0);
