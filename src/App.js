@@ -88,6 +88,7 @@ function TabContent({ item }) {
     setLikes((likes) => likes + 1);
   }
 
+  // Event Handler to undo after 2 seconds
   function handleUndoIn2s() {
     setTimeout(handleUndo, 2000);
   }
