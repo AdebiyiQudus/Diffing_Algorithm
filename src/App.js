@@ -81,6 +81,7 @@ function TabContent({ item }) {
     setLikes(0);
   }
 
+  // Event Handler to increment likes by 3
   function handleTripleInc() {
     setLikes((likes) => likes + 1);
     setLikes((likes) => likes + 1);
